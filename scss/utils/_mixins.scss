@@ -25,3 +25,7 @@
   background-image: url("assets/logo/logo.svg");
   background-repeat: no-repeat;
 }
+
+@mixin container-margin {
+  margin: 0 1rem;
+}
