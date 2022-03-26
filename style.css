@@ -148,6 +148,65 @@ li {
   background: linear-gradient(158deg, #ff79da 0%, #9356dc 100%);
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  height: 272px;
+  width: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+  overflow: hidden;
+}
+.card__header {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.card__header__new[data-visible=false] {
+  display: none;
+}
+.card__header__new[data-visible=true] {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+}
+.card__header__img img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+  padding: 1rem;
+}
+.card__body__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.card__body__text span:first-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.card__body__like {
+  font-size: 1.5rem;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -159,6 +218,7 @@ header {
   width: 100%;
   height: 64px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.199);
+  z-index: 1000;
 }
 header nav {
   display: none;
@@ -231,7 +291,7 @@ header nav {
   position: relative;
   height: 64px;
   background-color: #f8f8f8;
-  margin: 2rem 0;
+  margin: 2rem 0 2rem 1rem;
   border-radius: 1rem;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199);
 }
@@ -261,6 +321,22 @@ header nav {
   align-items: center;
   justify-content: center;
   color: white;
+}
+#index .restaurants {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+}
+#index .restaurants__title {
+  margin: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+#index .restaurants__card-container {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

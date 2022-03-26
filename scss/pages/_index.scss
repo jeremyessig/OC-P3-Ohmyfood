@@ -63,7 +63,7 @@
           position: relative;
           height: 64px;
           background-color: $bg-color_fourth;
-          margin: 2rem 0;
+          margin: 2rem 0 2rem 1rem;
           border-radius: 1rem;
           box-shadow: 0px 5px 5px $box-shadow-color;
           i {
@@ -94,6 +94,22 @@
           color: white;
         }
       }
+    }
+  }
+  .restaurants {
+    background-color: $bg-color_fourth;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    &__title {
+      @include container-margin;
+      margin-bottom: 1.5rem;
+    }
+    &__card-container {
+      @include container-margin;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
     }
   }
 }
