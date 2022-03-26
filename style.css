@@ -224,11 +224,43 @@ header nav {
   display: none;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  background-color: #353535;
+}
+.footer__brand {
+  margin-bottom: 8px;
+}
+.footer__brand svg {
+  height: 24px;
+  width: auto;
+}
+.footer__brand svg path {
+  fill: white;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+}
+.footer__text__proposal, .footer__text__partnership, .footer__text__legal, .footer__text__contact {
+  margin: 0.5rem 0;
+  color: white;
+}
+.footer__text__proposal a, .footer__text__partnership a, .footer__text__legal a, .footer__text__contact a {
+  color: white;
+}
+.footer__text__proposal i, .footer__text__partnership i, .footer__text__legal i, .footer__text__contact i {
+  width: 24px;
+}
+
 #index .location {
   display: grid;
   grid-template-rows: 64px 58px;
   width: 100%;
-  background-color: #efefef;
+  background-color: #eaeaea;
 }
 #index .location__container {
   grid-row: 2;
@@ -245,7 +277,7 @@ header nav {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
 }
 #index .explore__title {
   display: flex;
@@ -290,7 +322,7 @@ header nav {
   grid-template-columns: 0.5fr 2fr 0.5fr;
   position: relative;
   height: 64px;
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
   margin: 2rem 0 2rem 1rem;
   border-radius: 1rem;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199);
@@ -323,10 +355,10 @@ header nav {
   color: white;
 }
 #index .restaurants {
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
   width: 100%;
   height: auto;
-  padding-top: 2rem;
+  padding: 2rem 0 4rem;
 }
 #index .restaurants__title {
   margin: 0 1rem;
