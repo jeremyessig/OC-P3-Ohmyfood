@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>OhMyFood</title>
+    <title>A la française</title>
 </head>
 <body>
     <header>
@@ -21,132 +21,42 @@
             </div>
         </div>
     </header>
-    <main id="index">
-        <section class="location">
-            <div class="location__container">
-                <div class="location__container__icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="location__container__text">
-                    <p>Paris, Belleville</p>
-                </div>
+    <main class="restaurant">
+        <section class="cover">
+            <div class="cover__img">
+                <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
             </div>
         </section>
-        <section class="explore">
-            <div class="explore__title">
-                <h2>Réservez le menu qui vous convient</h2>
+        <section class="menu">
+            <div class="menu__head">
+                <div class="menu_head_title">
+                    <h1>A la française</h1>
+                </div>
+                <div class="menu__head__like">
+                    <i></i>
+                </div>
             </div>
-            <div class="explore__text">
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            </div>
-            <div class="explore__btn">
-                <a href="" class="btn btn-primary">
-                    Explorer nos restaurant
-                </a>
-            </div>
-
-        </section>
-        <section class="working">
-            <div class="working__title">
-                <h2>Fonctionnement</h2>
-            </div>
-            <div class="working__container">
-                <ul class="working__list">
-                    <li class="working__list__btn">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <span>Choisissez un restaurant</span>
-                    </li>
-                    <li class="working__list__btn">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <span>Composez votre menu</span>
-                    </li>
-                    <li class="working__list__btn">
-                        <i class="fa-solid fa-store"></i>
-                        <span>Dégustez au restaurant</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="restaurants">
-            <div class="restaurants__title">
-                <h2>Restaurants</h2>
-            </div>
-            <div class="restaurants__card-container">
-                <div class="card">
-                    <div class="card__header">
-                        <div class="card__header__new" data-visible="true">
-                            <span>Nouveau</span>
-                        </div>
-                        <div class="card__header__img">
-                            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                        </div>
-                    </div>
-                    <div class="card__body">
-                        <div class="card__body__text">
-                            <span>La palette du goût</span>
-                            <span>Ménilmontant</span>
-                        </div>
-                        <div class="card__body__like">
-                            <i class="fa-regular fa-heart"></i>
+            <div class="menu__container">
+                <div class="menu__container__title">
+                    <h3>Entrées</h3>
+                </div>
+                <div class="menu__container_flex">
+                    <div class="card-small">
+                        <div class="card-small__body">
+                            <div class="card-small__body__left">
+                                <h4>Tartare de poulpe acidulé</h4>
+                                <p>Aux zests d'orange</p>
+                            </div>
+                            <div class="card-small__body__right">
+                                <span>25€</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card__header">
-                        <div class="card__header__new" data-visible="true">
-                            <span>Nouveau</span>
-                        </div>
-                        <div class="card__header__img">
-                            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                        </div>
-                    </div>
-                    <div class="card__body">
-                        <div class="card__body__text">
-                            <span>La note enchantée</span>
-                            <span>Charonne</span>
-                        </div>
-                        <div class="card__body__like">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <div class="card__header__new" data-visible="false">
-                            <span>Nouveau</span>
-                        </div>
-                        <div class="card__header__img">
-                            <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
-                        </div>
-                    </div>
-                    <div class="card__body">
-                        <div class="card__body__text">
-                            <span>À la française</span>
-                            <span>Cité Rouge</span>
-                        </div>
-                        <div class="card__body__like">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <div class="card__header__new" data-visible="false">
-                            <span>Nouveau</span>
-                        </div>
-                        <div class="card__header__img">
-                            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-                        </div>
-                    </div>
-                    <div class="card__body">
-                        <div class="card__body__text">
-                            <span>Le délice des sens</span>
-                            <span>Folie-Méricourt</span>
-                        </div>
-                        <div class="card__body__like">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="btn__container">
+                <div class="btn btn-primary">
+                    Commander
                 </div>
             </div>
         </section>
