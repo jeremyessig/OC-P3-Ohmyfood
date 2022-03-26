@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-family: futura-pt-bold, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.btn-primary {
+  //background-color: $bg-color-fourthy;
+  background-image: url("assets/svg/btn.svg");
+  background-repeat: no-repeat;
+  height: 84px;
+  width: 296px;
+  font-family: Gotham;
+  color: $font-color-primary;
+}

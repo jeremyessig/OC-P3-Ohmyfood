@@ -1,0 +1,36 @@
+@mixin sliding($direction, $duration, $bgcolor) {
+  -webkit-animation: slide-#{$direction}-loader $duration ubic-bezier(
+      0.25,
+      0.46,
+      0.45,
+      0.94
+    ) both;
+  animation: slide-#{$direction}-loader $duration cubic-bezier(
+      0.25,
+      0.46,
+      0.45,
+      0.94
+    ) both;
+  @include sliding-keyframes($direction, $bgcolor);
+}
+
+@mixin sliding-keyframes($direction, $bgcolor) {
+  @-webkit-keyframes slide-#{$direction}-loader {
+    0% {
+      #{$direction}: 0;
+    }
+    100% {
+      #{$direction}: -100%;
+      background-color: $bgcolor;
+    }
+  }
+  @keyframes slide-#{$direction}-loader {
+    0% {
+      #{$direction}: 0;
+    }
+    100% {
+      #{$direction}: -100%;
+      background-color: $bgcolor;
+    }
+  }
+}

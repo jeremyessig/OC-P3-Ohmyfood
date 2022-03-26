@@ -1,0 +1,43 @@
+/*
+Theme Name: Colonia
+Version: 1.0
+Tested up to: 5.9
+Requires at least: 5.9
+Requires PHP: 5.2.4
+Description: Thème développé sur mesure pour le site Colonia
+Author: Team Aileen Digital
+Author URI: https://aileen-digital.com/
+License: Copyright Tous droits réservés 
+*/
+
+//sass --watch css/style.scss:style.css
+
+/**************************
+STYLES UTILISES DANS LE PROJET
+**************************/
+
+/**
+Fichier d'initialisation contenant les propriétés globales
+du projet
+*/
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/placeholders";
+@import "utils/mixins";
+
+@import "base/global";
+@import "base/typography";
+@import "base/animations";
+
+/**
+Les composants
+*/
+@import "components/buttons";
+
+/*
+Les views/pages
+*/
+@import "pages/home.scss";
+@import "pages/discover";
+@import "pages/subscribe";
+@import "_safari.scss";
