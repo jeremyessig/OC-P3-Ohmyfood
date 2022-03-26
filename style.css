@@ -21,12 +21,14 @@ du projet
 DEFINITION DES VARIABLES
 **************************/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -35,8 +37,10 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  margin: 1.5rem;
+  font-size: 1.8rem;
+  margin: 0;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -127,22 +131,21 @@ li {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  text-transform: uppercase;
   margin: 1rem;
   font-family: futura-pt-bold, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.1rem;
+  font-weight: bold;
   text-align: center;
 }
 
 .btn-primary {
-  background-image: url("assets/svg/btn.svg");
-  background-repeat: no-repeat;
-  height: 84px;
-  width: 296px;
-  font-family: Gotham;
-  color: black;
+  height: 56px;
+  width: 256px;
+  border-radius: 56px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.199);
+  color: white;
+  background: #ff79da;
+  background: linear-gradient(158deg, #ff79da 0%, #9356dc 100%);
 }
 
 header {
@@ -159,6 +162,57 @@ header {
 }
 header nav {
   display: none;
+}
+
+#index .location {
+  display: grid;
+  grid-template-rows: 64px 58px;
+  width: 100%;
+  background-color: #efefef;
+}
+#index .location__container {
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+}
+#index .location__container__icon, #index .location__container__text {
+  margin: 1rem;
+}
+#index .explore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 264px;
+  background-color: #f8f8f8;
+}
+#index .explore__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 126px;
+  margin: 0 10%;
+}
+#index .explore__title h2 {
+  text-align: center;
+}
+#index .explore__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 5%;
+}
+#index .explore__text p {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+}
+#index .explore__btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
