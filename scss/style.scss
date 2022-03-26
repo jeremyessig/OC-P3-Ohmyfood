@@ -29,15 +29,19 @@ du projet
 @import "base/typography";
 @import "base/animations";
 
-/**
-Les composants
-*/
+// /**
+// Les composants
+// */
 @import "components/buttons";
 
-/*
-Les views/pages
-*/
-@import "pages/home.scss";
-@import "pages/discover";
-@import "pages/subscribe";
-@import "_safari.scss";
+// /**
+// Les layouts
+// */
+
+@import "layouts/header";
+
+// /*
+// Les views/pages
+// */
+// @import "pages/index.scss";
+// @import "_safari.scss";
