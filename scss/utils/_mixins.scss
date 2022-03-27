@@ -29,3 +29,11 @@
 @mixin container-margin {
   margin: 0 1rem;
 }
+
+@mixin card-poping {
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation: card-poping 0.8s #{$i * 0.1}s ease-in-out;
+    }
+  }
+}

@@ -1,7 +1,6 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 32px 1fr 32px;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +10,14 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.199);
   z-index: 1000;
   nav {
+    grid-column: 1;
+    @include self-center;
+  }
+  nav[data-navigation="false"] {
     display: none;
+  }
+  .brand-container {
+    grid-column: 2;
+    @include self-center;
   }
 }

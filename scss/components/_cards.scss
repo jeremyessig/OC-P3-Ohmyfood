@@ -66,6 +66,7 @@
 }
 
 .card-small {
+  //@include card-poping;
   display: flex;
   background-color: white;
   border-radius: 1rem;
@@ -74,6 +75,7 @@
   box-shadow: 5px 5px 5px $box-shadow-color;
   overflow: hidden;
   margin: 1rem 0;
+  cursor: pointer;
   &__body {
     align-items: center;
     display: flex;
