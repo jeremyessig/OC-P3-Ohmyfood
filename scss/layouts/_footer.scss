@@ -17,6 +17,14 @@
   &__text {
     display: flex;
     flex-direction: column;
+    a {
+      cursor: pointer;
+      color: $font-color-secondary;
+    }
+    a:hover {
+      color: $font-color-secondary;
+      text-decoration: underline;
+    }
     &__proposal,
     &__partnership,
     &__legal,
@@ -29,6 +37,15 @@
       i {
         width: 24px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    align-items: center;
+    &__text {
+      text-align: center;
     }
   }
 }

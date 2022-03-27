@@ -13,23 +13,24 @@
   cursor: pointer;
 }
 
-.btn:hover {
-  opacity: 0.9;
-  color: white;
-}
-
 .btn-primary {
   height: 56px;
   width: 256px;
   border-radius: 56px;
   box-shadow: 0 0 10px $box-shadow-color;
   color: white;
-  background: rgb(255, 121, 218);
-  background: linear-gradient(
+  background-color: grey;
+  background-image: linear-gradient(
     158deg,
-    rgba(255, 121, 218, 1) 0%,
-    rgba(147, 86, 220, 1) 100%
+    rgba(255, 121, 217, 0.87) 0%,
+    rgba(146, 86, 220, 0.877) 100%
   );
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.644);
+  color: white;
+  background-color: #fff;
 }
 
 .btn-like {

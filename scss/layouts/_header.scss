@@ -1,6 +1,6 @@
 header {
   display: grid;
-  grid-template-columns: 32px 1fr 32px;
+  grid-template-columns: 4rem 1fr 4rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,6 +12,7 @@ header {
   nav {
     grid-column: 1;
     @include self-center;
+    font-size: 1.2rem;
   }
   nav[data-navigation="false"] {
     display: none;
