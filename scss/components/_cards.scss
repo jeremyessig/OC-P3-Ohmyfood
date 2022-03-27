@@ -7,6 +7,7 @@
   width: 100%;
   box-shadow: 5px 5px 5px $box-shadow-color;
   overflow: hidden;
+  transition: 0.2s ease-in-out;
   &__header {
     position: relative;
     height: 70%;
@@ -57,6 +58,11 @@
       font-size: 1.5rem;
     }
   }
+}
+
+.card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
 .card-small {
@@ -111,5 +117,11 @@
     &:hover &__check i {
       animation: rotate-check 0.5s ease-in-out;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    height: 448px;
   }
 }

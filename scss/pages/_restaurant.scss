@@ -22,7 +22,7 @@
     border-radius: 48px 48px 0 0;
     background-color: $bg-color_fourth;
     width: 100%;
-    max-width: 100%;
+    max-width: 1330px;
     z-index: 10;
     &__head {
       display: flex;
@@ -33,6 +33,10 @@
           font-size: 1.8rem;
           font-family: "Shrikhand", cursive;
         }
+      }
+      &__like {
+        margin: 0 2rem;
+        font-size: 2rem;
       }
     }
     &__body {

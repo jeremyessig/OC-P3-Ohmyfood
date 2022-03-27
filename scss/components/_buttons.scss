@@ -1,4 +1,5 @@
 .btn {
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,6 +9,12 @@
   font-style: normal;
   font-weight: bold;
   text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: white;
 }
 
 .btn-primary {
@@ -22,4 +29,32 @@
     rgba(255, 121, 218, 1) 0%,
     rgba(147, 86, 220, 1) 100%
   );
+}
+
+.btn-like {
+  @include flex-center;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  .fa-regular.fa-heart {
+    position: absolute;
+    display: block;
+  }
+  .fa-solid.fa-heart {
+    position: absolute;
+    display: none;
+    background: #9356dc;
+    background: -webkit-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    background: -moz-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    background: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn-like:hover {
+  .fa-solid.fa-heart {
+    display: block;
+    animation: fill-like-solid 0.5s;
+  }
 }
