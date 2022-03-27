@@ -34,3 +34,23 @@
     }
   }
 }
+
+// Rotation du check des card-small
+
+@keyframes rotate-check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes unrotate-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

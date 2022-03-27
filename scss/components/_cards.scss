@@ -58,3 +58,58 @@
     }
   }
 }
+
+.card-small {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  height: 70px;
+  width: 100%;
+  box-shadow: 5px 5px 5px $box-shadow-color;
+  overflow: hidden;
+  margin: 1rem 0;
+  &__body {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    &__text {
+      min-width: calc(100% - 3rem);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: 0.5s ease-in-out;
+      padding: 0 1rem;
+      h4,
+      p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      min-width: 3rem;
+      span {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__check {
+      @include flex-center;
+      min-width: 4rem;
+      height: 100%;
+      background-color: $bg-color-thirty;
+      color: white;
+      font-size: 1.5rem;
+      i {
+        animation: unrotate-check 0.5s ease-in-out;
+      }
+    }
+    &:hover &__text {
+      min-width: calc(100% - 7rem);
+    }
+    &:hover &__check i {
+      animation: rotate-check 0.5s ease-in-out;
+    }
+  }
+}
