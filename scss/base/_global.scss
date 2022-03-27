@@ -5,8 +5,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  // overflow-x: hidden;
-  // font-family: 'Shrikhand', cursive;
 }
 
 h1 {
@@ -37,77 +35,4 @@ a:hover {
 
 li {
   list-style-type: none;
-}
-
-.first-p {
-  text-indent: 1.5em;
-  &::first-letter {
-    font-size: 2rem;
-  }
-}
-
-.container-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.font-size-small {
-  font-size: small;
-}
-
-.font-size-smaller {
-  font-size: smaller;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.m-10 {
-  margin: 10%;
-}
-
-.m-20 {
-  margin: 20%;
-}
-
-.m-30 {
-  margin: 30%;
-}
-
-//Padding
-
-.p-5 {
-  padding: 5%;
-}
-
-.p-10 {
-  padding: 10%;
-}
-
-.p-20 {
-  padding: 20%;
-}
-
-.p-30 {
-  padding: 30%;
-}
-
-@media screen and (max-width: 1440px) {
-}
-
-@media screen and (max-width: 880px) {
 }
