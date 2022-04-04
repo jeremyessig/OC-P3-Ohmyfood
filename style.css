@@ -684,6 +684,10 @@ header .brand-container {
   animation: card-poping 2.4s ease-in-out;
 }
 
+.delay-10 {
+  animation: card-poping 2.6s ease-in-out;
+}
+
 @media screen and (min-width: 1024px) {
   .restaurant .menu__body {
     display: flex;
