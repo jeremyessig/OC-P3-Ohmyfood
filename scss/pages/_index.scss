@@ -35,8 +35,7 @@
     background-color: #eaeaea;
     &__container {
       grid-row: 2;
-      justify-self: center;
-      align-self: center;
+      @include self-center;
       display: flex;
       @include container-margin;
       &__icon,

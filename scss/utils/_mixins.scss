@@ -9,15 +9,6 @@
   align-self: center;
 }
 
-@mixin default-page {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("assets/bg/colonia-bg.png");
-  font-family: Gotham, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: $font-color-primary;
-}
 
 @mixin logo {
   width: 80px;
